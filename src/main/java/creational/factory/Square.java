@@ -1,4 +1,4 @@
-package src.main.java.factory;
+package src.main.java.creational.factory;
 
 public class Square implements Shape{
     @Override

@@ -1,4 +1,4 @@
-package src.main.java.factory;
+package src.main.java.creational.factory;
 
 public class Main {
     public static void main(String[] args) {

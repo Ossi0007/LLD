@@ -1,5 +1,8 @@
 package src.main.java.hashmap;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
 public class MyHashMap<K, V> {
     private static final int INITIAL_SIZE = 1 << 4;
     private static final int MAXIMUM_CAPACITY = 1 << 30;
@@ -23,7 +26,6 @@ public class MyHashMap<K, V> {
         n |= n >>> 4;
         n |= n >>> 8;
         n |= n >>> 16;
-
 
         return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
     }
